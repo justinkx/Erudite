@@ -1,0 +1,42 @@
+$theme: #3129af;
+.header {
+  background-color: $theme;
+}
+.banner-container {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+}
+.college-image {
+  width: 80%;
+  height: 50%;
+}
+.data-container,
+.image-container {
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+}
+.data-container {
+  padding-left: 2rem;
+  color: white;
+}
+@media screen and (min-width: 767px) {
+  .banner-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    padding-top: 30px;
+  }
+  .data-container,
+  .image-container {
+    width: 50%;
+  }
+  .data-container {
+    margin-bottom: auto;
+  }
+}

@@ -1,0 +1,27 @@
+@import "~bootstrap/scss/bootstrap";
+:root {
+  --theme: #5b4f8e;
+  --background: #f0f1f3;
+}
+
+$theme: #3129af;
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+button {
+  line-height: 20px;
+}
+html,
+body {
+  font-family: "Baloo Chettan 2", "Montserrat", cursive, "Raleway", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+  margin: 0px;
+}
