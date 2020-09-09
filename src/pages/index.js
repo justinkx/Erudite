@@ -1,7 +1,6 @@
 import React, { useEffect } from "react"
-
 import SEO from "../components/seo"
-import AppPage from "./app"
+import AppPage from "../components/index"
 
 import Header from "../components/Header/Header"
 import useFirebase from "../utils/useFirebase"

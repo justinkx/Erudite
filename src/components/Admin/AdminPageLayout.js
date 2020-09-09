@@ -6,7 +6,7 @@ import { Router, Switch } from "@reach/router"
 import PrivateRoute from "../privateRoute"
 import Dashboard from "./Dashboard/Dashboard"
 
-function AdminPage({ children }) {
+function AdminPageLayout({ children }) {
   return (
     <div className="admin-container">
       <nav className="admin-navbar">
@@ -23,4 +23,4 @@ function AdminPage({ children }) {
   )
 }
 
-export default AdminPage
+export default AdminPageLayout

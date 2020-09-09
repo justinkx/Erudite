@@ -22,6 +22,9 @@
   align-items: center;
   h5 {
     margin: 0px;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 600;
   }
 }
 .content {
@@ -80,9 +83,11 @@
     margin-top: 0px;
     text-align: center !important;
     .logo {
-      width: 70px;
-      height: 70px;
-      border-radius: 35px;
+      color: white;
+      cursor: pointer;
+      margin-left: 20px;
+      font-size: 40px;
+      margin-bottom: 30px;
     }
   }
   .link-item {
@@ -98,6 +103,27 @@
       font-size: 16px;
       color: white;
     }
+  }
+}
+.search-slot {
+  display: none;
+}
+.avatar-slot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  .noti-container {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 0px;
+    border-left: 1px solid var(--background);
+    border-right: 1px solid var(--background);
+    height: 40px;
+    width: 100px;
+    margin-right: 10px;
   }
 }
 
@@ -117,6 +143,9 @@
   .admin-header {
     margin: 0px 20px;
     height: 50px;
+    h5 {
+      font-size: 18px;
+    }
   }
   .content {
     height: calc(100% - 50px);
@@ -126,7 +155,7 @@
     display: none;
   }
   .navbar-ul {
-    padding-left: 0px;
+    padding-left: 20px;
     align-items: center;
     .nav-item {
       width: 100%;
@@ -143,30 +172,44 @@
       margin-top: 40px;
       text-align: center !important;
       .logo {
-        width: 70px;
-        height: 70px;
-        border-radius: 35px;
+        font-size: 50px;
+        margin-left: 0px;
+        margin-bottom: 0px;
       }
     }
     .link-item {
+      position: relative;
       color: white;
-      padding: 10px 25px;
-      transition: background-color 0.2s ease-in;
-
+      padding: 10px 0px 10px 20px;
+      transition: background-color 0.1s ease-in;
+      margin-bottom: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
       a {
         text-align: left;
-        transition: color 0.2s ease-in;
+        transition: background-color 0.1s ease-in;
+        text-decoration: none;
+        font-size: 14px;
       }
       cursor: pointer;
     }
     .link-item:hover {
-      background-color: white !important;
+      background-color: var(--background) !important;
+
       a {
         color: var(--theme) !important;
       }
     }
-    .link-item:hover::before {
-      border-top-right-radius: 20px;
+  }
+  .search-slot {
+    display: block;
+    width: 35%;
+  }
+  .avatar-slot {
+    .noti-container {
+      padding: 0px 10px;
+
+      width: 120px;
     }
   }
 }

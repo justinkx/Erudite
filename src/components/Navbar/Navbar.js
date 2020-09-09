@@ -34,7 +34,7 @@ function NavbarComponent() {
       .then(response => {
         setCredentials({ email, password })
         console.log("resp", response)
-        navigate("/admin")
+        navigate("/admin/dashboard")
       })
       .catch(error => {
         console.log("error", error)

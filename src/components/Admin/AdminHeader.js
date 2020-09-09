@@ -1,6 +1,11 @@
 import React from "react"
 import "./AdminPage.scss"
 import AdminNavBar from "./AdminNavBar"
+import SearchBar from "../SearchBar/SearchBar"
+import { faBell, faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons"
+import IconAvatar from "../Avatar/IconAvatar"
+import User from "../../images/users/user1.jpg"
+import ImageAvatar from "../Avatar/ImageAvatar"
 
 function AdminHeader({}) {
   const openNav = () => {
@@ -16,12 +21,23 @@ function AdminHeader({}) {
         <div onClick={openNav} className="hamburger-menu">
           &#9776;
         </div>
-        <h5>Welcome To Erudite</h5>
+        <h5 class="welcome">Welcome To Erudite</h5>
+
+        <div className="search-slot">
+          <SearchBar />
+        </div>
+        <div className="avatar-slot">
+          <div class="noti-container">
+            <IconAvatar icon={faBell} size="30" />
+            <IconAvatar icon={faEnvelopeOpenText} size="30" />
+          </div>
+          <ImageAvatar image={User} size={30} />
+        </div>
       </div>
       <div id="mySidenav" className="sidenav">
-        <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
+        <div className="closebtn" onClick={closeNav}>
           &times;
-        </a>
+        </div>
         <AdminNavBar />
       </div>
     </>

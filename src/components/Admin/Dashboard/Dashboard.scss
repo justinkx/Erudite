@@ -1,0 +1,44 @@
+.calendar-container {
+  width: 100%;
+  .class3 {
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    abbr[title] {
+      text-decoration: none !important;
+    }
+    .react-calendar__navigation__prev-button,
+    .react-calendar__navigation__next-button {
+      margin: 10px 0px;
+      border-radius: 10px;
+      background-color: rgb(242, 153, 147);
+      color: white;
+    }
+    .react-calendar__navigation__prev-button:active,
+    .react-calendar__navigation__prev-button:focus,
+    .react-calendar__navigation__next-button:active,
+    .react-calendar__navigation__next-button:focus {
+      background-color: rgb(242, 153, 147);
+    }
+  }
+}
+.perf-container {
+  width: 47%;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: white;
+  .perf-card-title {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  span {
+    font-size: 13px;
+    color: #cbcbcb;
+  }
+}
+@media screen and (min-width: 767px) {
+  .calendar-container {
+    width: 47%;
+  }
+}
