@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { Router } from "@reach/router"
 import PrivateRoute from "../components/privateRoute"
 import AdminPageLayout from "../components/Admin/AdminPageLayout"
@@ -7,7 +7,6 @@ import Hostel from "../components/Admin/Hostel/Hostel"
 import Library from "../components/Admin/Library/Library"
 import Students from "../components/Admin/Students/Students"
 import Teachers from "../components/Admin/Teachers/Teachers"
-import { navigate } from "@reach/router"
 
 function admin() {
   return (

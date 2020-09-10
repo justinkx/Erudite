@@ -1,7 +1,4 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-import { colors } from "../../utils/colors"
 import "./Header.scss"
 import NavbarComponent from "../Navbar/Navbar"
 import { graphql, useStaticQuery } from "gatsby"
@@ -9,7 +6,7 @@ import Img from "gatsby-image"
 
 const Header = ({ siteTitle = "Login" }) => {
   const data = useStaticQuery(graphql`
-    query MyQuery {
+    query Headerquery {
       collegeImage: file(relativePath: { eq: "college.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
@@ -19,14 +16,13 @@ const Header = ({ siteTitle = "Login" }) => {
       }
     }
   `)
-  console.log("data", data)
   return (
     <header className="header">
       <NavbarComponent />
       <div className="banner-container">
         <div className="data-container">
-          <h2>Smart Solutions</h2>
-          <h5>Find Your Ideal Education Solutions</h5>
+          <h2>Management Solutions</h2>
+          <h5>Experience education with a difference</h5>
         </div>
         <div className="image-container">
           <Img

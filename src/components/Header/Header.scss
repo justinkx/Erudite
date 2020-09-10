@@ -1,6 +1,8 @@
 $theme: #3129af;
 .header {
   background-color: $theme;
+  font-family: "Montserrat";
+  min-height: 75vh;
 }
 .banner-container {
   height: 65vh;
@@ -19,12 +21,23 @@ $theme: #3129af;
   width: 100%;
   padding: 10px;
   overflow: hidden;
+  h2 {
+    font-family: "Montserrat";
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-family: "Baloo Chettan 2";
+  }
 }
 .data-container {
   padding-left: 2rem;
   color: white;
 }
 @media screen and (min-width: 767px) {
+  .header {
+    min-height: 60vh;
+  }
   .banner-container {
     flex-direction: row;
     justify-content: space-between;
@@ -35,6 +48,9 @@ $theme: #3129af;
   .data-container,
   .image-container {
     width: 50%;
+    h2 {
+      font-size: 2rem;
+    }
   }
   .data-container {
     margin-bottom: auto;

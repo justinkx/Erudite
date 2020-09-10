@@ -21,13 +21,13 @@ function AdminHeader({}) {
         <div onClick={openNav} className="hamburger-menu">
           &#9776;
         </div>
-        <h5 class="welcome">Welcome To Erudite</h5>
+        <h5 className="welcome">Welcome To Erudite</h5>
 
         <div className="search-slot">
           <SearchBar />
         </div>
         <div className="avatar-slot">
-          <div class="noti-container">
+          <div className="noti-container">
             <IconAvatar icon={faBell} size="30" />
             <IconAvatar icon={faEnvelopeOpenText} size="30" />
           </div>

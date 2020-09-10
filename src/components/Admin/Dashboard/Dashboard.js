@@ -43,12 +43,7 @@ function Dashboard() {
       </div>
       <div className="content-row">
         <div className="calendar-container">
-          <Calendar
-            value={["2020-08-07"]}
-            className="class3"
-            onChange={onChange}
-            value={value}
-          />
+          <Calendar value={value} className="class3" onChange={onChange} />
         </div>
         <PerformanceCard />
       </div>

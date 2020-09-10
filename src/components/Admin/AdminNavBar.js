@@ -1,6 +1,5 @@
 import React, { memo } from "react"
 import "./AdminPage.scss"
-import Logo from "../../images/logo.png"
 import { Link, navigate, useLocation } from "@reach/router"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBookReader } from "@fortawesome/free-solid-svg-icons"

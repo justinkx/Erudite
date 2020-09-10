@@ -16,6 +16,7 @@ function ImageAvatar({ image, size = 30, color = "#f1f0f5" }) {
           height: `${size - 1}px`,
         }}
         src={image}
+        alt="avatar"
       />
     </div>
   )

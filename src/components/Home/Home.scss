@@ -1,0 +1,62 @@
+.slide-div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  max-height: 70vh;
+  scroll-snap-align: center;
+  .slide-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 25px;
+    cursor: default;
+    z-index: 110;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .slide-content {
+      text-align: left;
+      margin: 0% 10%;
+
+      p {
+        font-family: "Raleway";
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
+.ml14 {
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-family: "Montserrat";
+}
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml14 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.ml14 .letter {
+  display: inline-block;
+  line-height: 1em;
+}

@@ -1,15 +1,6 @@
 import React from "react"
 import "./Dashboard.scss"
-import {
-  BarChart,
-  Bar,
-  Cell,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-} from "recharts"
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from "recharts"
 import { scaleOrdinal } from "d3-scale"
 import { schemeCategory10 } from "d3-scale-chromatic"
 const colors = scaleOrdinal(schemeCategory10).range()
@@ -47,14 +38,14 @@ const TriangleBar = props => {
 function PerformanceCard() {
   return (
     <div className="perf-container">
-      <div className="content-row">
-        <h5 class="perf-card-title">School Performance</h5>
+      <div className="content-row no-wrap no-margin perf-title">
+        <h5 className="perf-card-title">School Performance</h5>
         <span>All the data in percentage(%)</span>
       </div>
-      <div className="content-row">
+      <div className="content-row no-margin ">
         <BarChart
           width={400}
-          height={250}
+          height={230}
           data={data}
           margin={{
             top: 20,

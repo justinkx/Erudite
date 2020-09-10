@@ -3,6 +3,7 @@
 :root {
   --theme: #5b4f8e;
   --background: #f0f1f3;
+  --green: #52963f;
 }
 
 $theme: #3129af;
@@ -14,10 +15,14 @@ button:active {
 button {
   line-height: 20px;
 }
-html,
+
 body {
   font-family: "Baloo Chettan 2", "Montserrat", cursive, "Raleway", sans-serif;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: inline mandatory;
 }
+
 h1,
 h2,
 h3,
@@ -33,11 +38,46 @@ span {
   align-items: center;
   flex-wrap: wrap;
 }
+.no-wrap {
+  flex-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+.no-margin {
+  margin: 0px;
+}
+.center {
+  text-align: center;
+}
+.green-underline:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 30%;
+  height: 2px;
+  border-bottom: 3px solid var(--green);
+}
+.gray-quotes {
+  font-size: 2em;
+  color: #c1c1c1;
+  font-weight: 200;
+  vertical-align: -0.5em;
+  line-height: 0.1em;
+  font-family: "ui-monospace";
+  position: relative;
+  bottom: 8px;
+}
+.hPad5 {
+  padding: 0px 5px;
+}
 @media screen and (min-width: 767px) {
   .content-row {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 15px;
+  }
+  .gray-quotes {
+    font-size: 4em;
   }
 }

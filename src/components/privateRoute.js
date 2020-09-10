@@ -1,6 +1,5 @@
 import React from "react"
 import { navigate } from "gatsby"
-import { isLoggedIn } from "../services/auth"
 import useFirebase from "../utils/useFirebase"
 const PrivateRoute = ({ component: Component, location, ...rest }) => {
   const firebase = useFirebase()

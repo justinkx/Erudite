@@ -1,9 +1,10 @@
 .calendar-container {
   width: 100%;
+  margin-bottom: 20px;
   .class3 {
     width: 100%;
     border: none;
-    border-radius: 15px;
+    border-radius: 8px;
     overflow: hidden;
     abbr[title] {
       text-decoration: none !important;
@@ -24,10 +25,17 @@
   }
 }
 .perf-container {
-  width: 47%;
+  width: 100%;
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 8px;
   background-color: white;
+  margin-bottom: 20px;
+  .perf-title {
+    height: 45px;
+  }
+  .recharts-surface {
+    width: 100% !important;
+  }
   .perf-card-title {
     font-size: 15px;
     font-weight: bold;
@@ -39,6 +47,9 @@
 }
 @media screen and (min-width: 767px) {
   .calendar-container {
-    width: 47%;
+    width: calc(50% - 16px);
+  }
+  .perf-container {
+    width: calc(50% - 16px);
   }
 }

@@ -2,9 +2,6 @@ import React from "react"
 import "./AdminPage.scss"
 import AdminHeader from "./AdminHeader"
 import AdminNavBar from "./AdminNavBar"
-import { Router, Switch } from "@reach/router"
-import PrivateRoute from "../privateRoute"
-import Dashboard from "./Dashboard/Dashboard"
 
 function AdminPageLayout({ children }) {
   return (
