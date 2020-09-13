@@ -45,7 +45,7 @@ function PerformanceCard() {
       <div className="content-row no-margin ">
         <BarChart
           width={400}
-          height={230}
+          height={205}
           data={data}
           margin={{
             top: 20,

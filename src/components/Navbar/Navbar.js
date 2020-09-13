@@ -69,8 +69,46 @@ function NavbarComponent() {
       />
       <Navbar.Collapse className="flex-end" id="basic-navbar-nav">
         <Nav className="">
-          <Nav.Link>Services</Nav.Link>
-          <Nav.Link>Link</Nav.Link>
+          <Nav.Link className="nav-link">
+            Services
+            <div className="navlink-hoverlist">
+              <ul>
+                <li>Online Lectures</li>
+                <li>Virtual Classes</li>
+                <li>Online Exams & Assessment</li>
+                <li>Industrial Visits</li>
+              </ul>
+              <div className="vertical-line" />
+              <div className="nav-bar-gallery">
+                <ul>
+                  <li>Mobile App</li>
+                  <li>Progress Portal</li>
+                  <li>Placement Cell</li>
+                  <li>PTA Executive</li>
+                </ul>
+              </div>
+            </div>
+          </Nav.Link>
+          <Nav.Link className="nav-link">
+            Resources
+            <div className="navlink-hoverlist">
+              <ul>
+                <li>E-Library</li>
+                <li>Cultural Auditorium</li>
+                <li>High Tech Workshops</li>
+                <li>Smart Labs</li>
+              </ul>
+              <div className="vertical-line" />
+              <div className="nav-bar-gallery">
+                <ul>
+                  <li>Sports Club</li>
+                  <li>Interactive Smart Class Rooms</li>
+                  <li>Mainframe Computer Labs</li>
+                  <li>Union Activities</li>
+                </ul>
+              </div>
+            </div>
+          </Nav.Link>
           <Button onClick={() => setPopup(true)} className="login-button">
             Login
           </Button>
